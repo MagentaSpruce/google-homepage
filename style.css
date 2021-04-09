@@ -220,13 +220,13 @@ main img {
 
 #search {
   width: 50vw;
-  max-width: 500px;
+  max-width: 50rem;
   height: 40px;
   border: 1px solid #e1e1e1;
-  border-radius: 50px;
-  padding: 0 40px;
+  border-radius: 5rem;
+  padding: 0 4rem;
   font-size: initial;
-  margin: 20px;
+  margin: 2rem;
 }
 #search:hover,
 #search:active,

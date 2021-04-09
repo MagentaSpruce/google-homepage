@@ -1,0 +1,169 @@
+*,
+*::befpre,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 1.5rem;
+    display: grid;
+    grid-template-columns: [sidebar-start] 7vw [sidebar-end center-start] 55vw [center-end desert-start] 38vw [desert-end];
+    grid-template-rows: 15vh 80vh;
+    background-color: whitesmoke;
+}
+
+a{
+    text-decoration: none;
+}
+
+h2{
+    font-size: 2rem;
+}
+
+h3{
+    font-size: 1.6rem;
+}
+
+p{font-size: 1.4rem;}
+
+.google__logo{
+    width: 100%;
+    grid-column: sidebar-start / sidebar-end;
+    grid-row: 1 / 2;
+ 
+    position: relative;
+    top: 2rem;
+}
+
+.nav{
+    
+    grid-column: sidebar-end / desert-start;
+    grid-row: 1 / 2;
+}
+
+.top{
+    grid-column: desert-start /desert-end;
+    
+}
+
+.header{
+    
+    grid-column: sidebar-end / desert-end;
+    grid-row: 2 / -1;
+    border-top: .1px solid #e1e1e1;
+}
+
+.search__icon{
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+
+.form{
+    display: flex;
+}
+
+.bar__icons{
+    margin-left: -4rem;
+    
+}
+
+#search{
+    width: 95%;
+    max-width: 50rem;
+    height: 4rem;
+    border-radius: 10rem;
+    border: 1px solid #e1e1e1;
+    font-size: 1.4rem;
+    margin: 1rem;
+    text-align: start;
+    box-shadow: .1rem .1rem 1rem rgba(0,0,0,.2);
+}
+
+
+
+.search__icon{
+    padding-right: .2rem;
+    fill: rgb(92, 87, 87);
+    align-content: center;
+}
+
+.nav__sub--left{
+    display: grid;
+   
+    
+    padding-left:1rem;
+    grid-template-columns: repeat(auto-fit, minmax(1rem,1fr));
+    align-content: center;
+    justify-content: center;
+    
+    
+}
+
+.nav__sub--left a {
+    color: #5e5656;
+    font-family: inherit;
+    font-size: 1.2rem;
+}
+
+.all{
+    color: rgb(18, 18, 165)
+}
+.active{
+    border-bottom: 2px solid blue;
+    
+}
+.menu.gsprites {
+    display: flex;
+    justify-content: flex-end;
+   
+    padding: 2rem 4rem;
+    margin-left: 2rem;
+}
+
+hr {
+   grid-column: 1 / -1;
+}
+
+.header__about{
+    font-weight: 100;
+    color: #837d7d;
+    font-size: 1.2rem;
+}
+
+
+
+.header__title{
+    color: rgb(59, 59, 146);
+    margin-bottom: -2rem;
+}
+
+.header__ad{
+    font-size: 1rem;
+    position: relative;
+    top: 1.5rem;
+}
+
+.header__anchors{
+    display: flex;
+    position: relative;
+    bottom: 1rem;
+}
+
+.header__description{
+    color: #333030;
+    position: relative;
+    top: 1rem;
+    margin-bottom: 2.5rem;
+}
