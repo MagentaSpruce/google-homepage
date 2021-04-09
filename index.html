@@ -4,31 +4,38 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Google</title>
 </head>
 <body>
     <nav class="nav">
         <ul class="nav__bar">
-            <li class="nav__items"><a href="#">About</a></li>
-            <li class="nav__items"><a href="#">Store</a></li>
-            <li class="nav__items"><a href="#">Gmail</a></li>
+           <div class="nav__bar--left"> <li class="nav__items"><a href="#">About</a></li>
+            <li class="nav__items"><a href="#">Store</a></li></div>
+           <div class="nav__bar--right"> <li class="nav__items"><a href="#">Gmail</a></li>
             <li class="nav__items"><a href="#">Images</a></li>
             <li class="nav__items">
                <img src="../img/app.svg" alt="app logo">
             </li>
-            <li class="nav__items"><button class="nav_btn">Sign in</button></li>
+            <li class="nav__items"><button class="nav__btn">Sign in</button></li></div>
         </ul>
     </nav>
 
     <header class="header">
-        <h1 class="header__h1">Google</h1>
-        <form action="text">
-            <input type="text">
+
+   <div class="header__container"> 
+         <h1 class="header__h1"><span class="blue">G</span><span class="red">o</span><span class="yellow">o</span><span class="blue">g</span><span class="green">l</span><span class="red">e</span></h1>
+        <form action="#" class="search">
+            <img src="../img/search.svg" alt="search icon" class="search__icon">
+            <input type="text" class="search__input" >
             <label for="text"></label>
-            <button class="btn-header">Google Search</button>
-            <button class="btn-header">I'm Feeling Lucky</button>
+            <img src="../img/mic.svg" alt="microphone icon"  class="search__icon">
+           
         </form>
+        <button class="btn btn-header-1">I'm Feeling Lucky</button>
+        <button class="btn btn-header-2">Google Search</button>  </div>
     </header>
+
     <footer class="footer">
         <ul class="footer__list">
             <li class="footer__list-items"><a href="#">Advertising</a></li>
