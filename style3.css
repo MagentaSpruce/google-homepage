@@ -52,6 +52,82 @@ p{font-size: 1.4rem;}
     grid-row: 1 / 2;
 }
 
+.nav--btn{
+    padding: 1rem 1.7rem;
+    display: inline-block;
+    border-radius: .5rem;
+    border: none;
+    background-color: rgb(59, 59, 146);
+    color: #fff;
+    cursor: pointer;
+}
+
+
+.popup {
+    position: absolute;
+    top: 6rem;
+    right: 2rem;
+    width: 20rem;
+    height: 33rem;
+    background-color: #fff;
+    border: 1px solid #c0c0c0;
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: center;
+    box-shadow: 1px -1px 5px silver;
+    z-index: 99;
+    border-radius: 1rem;
+  }
+  .popup a {
+    text-decoration: none;
+    color: #3b3b3b;
+    display: flex;
+    flex-direction: column;
+    align-content: left;
+    
+    width: 3rem;
+    height: 3rem;
+    padding: 1rem;
+  
+  }
+  .popup a:hover {
+    background-color: #e8f0fe;
+  }
+  .popup a div:nth-of-type(1) {
+    height: 4.8rem;
+    width: 4.8rem;
+  }
+  
+  .search__icon {
+    height: 3rem;
+    width: 3rem;
+    justify-content: center;
+  }
+  
+  .first-sprite {
+    fill: rgb(221, 212, 212);
+  }
+  .second-sprite {
+    fill: rgb(190, 42, 42);
+  }
+  .third-sprite {
+    fill: rgb(53, 52, 52);
+  }
+  .fourth-sprite {
+    fill: rgb(236, 236, 9);
+  }
+  .fifth-sprite {
+    fill: red;
+  }
+  
+  .sixth-sprite {
+    fill: rgb(13, 104, 13);
+  }
+  .sprite_text {
+    padding-top: 0.5rem;
+  }
+  
+
 .top{
     grid-column: desert-start /desert-end;
     
